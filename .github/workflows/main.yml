@@ -8,6 +8,7 @@ jobs:
     
     steps:
      - uses: actions/checkout@master  
+     - uses: ramonpaolo/action-upload-s3@main
        env:
         FILE: README.md
         AWS_REGION: 'us-east-2'
